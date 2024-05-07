@@ -11,6 +11,7 @@
 		E771BD002BE9AE2D00E25C8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771BCFF2BE9AE2D00E25C8E /* ContentView.swift */; };
 		E771BD022BE9AE2D00E25C8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E771BD012BE9AE2D00E25C8E /* Assets.xcassets */; };
 		E771BD052BE9AE2D00E25C8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E771BD042BE9AE2D00E25C8E /* Preview Assets.xcassets */; };
+		E771BD0D2BE9AE6700E25C8E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E771BD0C2BE9AE6700E25C8E /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E771BCFF2BE9AE2D00E25C8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E771BD012BE9AE2D00E25C8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E771BD042BE9AE2D00E25C8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E771BD0E2BE9AE8500E25C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E771BD0D2BE9AE6700E25C8E /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +54,7 @@
 		E771BCFC2BE9AE2D00E25C8E /* Forecast */ = {
 			isa = PBXGroup;
 			children = (
+				E771BD0E2BE9AE8500E25C8E /* Info.plist */,
 				E771BCFD2BE9AE2D00E25C8E /* ForecastApp.swift */,
 				E771BCFF2BE9AE2D00E25C8E /* ContentView.swift */,
 				E771BD012BE9AE2D00E25C8E /* Assets.xcassets */,
@@ -83,6 +87,9 @@
 			dependencies = (
 			);
 			name = Forecast;
+			packageProductDependencies = (
+				E771BD0C2BE9AE6700E25C8E /* Alamofire */,
+			);
 			productName = Forecast;
 			productReference = E771BCFA2BE9AE2D00E25C8E /* Forecast.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +118,9 @@
 				Base,
 			);
 			mainGroup = E771BCF12BE9AE2D00E25C8E;
+			packageReferences = (
+				E771BD0B2BE9AE6600E25C8E /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = E771BCFB2BE9AE2D00E25C8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,6 +284,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Forecast/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Forecast/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +313,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Forecast/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Forecast/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E771BD0B2BE9AE6600E25C8E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 5.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E771BD0C2BE9AE6700E25C8E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E771BD0B2BE9AE6600E25C8E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E771BCF22BE9AE2D00E25C8E /* Project object */;
 }
